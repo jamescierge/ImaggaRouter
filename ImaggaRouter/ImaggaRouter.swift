@@ -12,6 +12,7 @@ public enum ImaggaRouter {
     static let baseURLPath = "http://api.imagga.com/v1"
     static let authenticationToken = "Basic xxx"
     
+    // Commenting to test for change
     case content
     case tags(String)
     case colors(String)

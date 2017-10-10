@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		47EA27301F8D477300079D70 /* ImaggaRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 47EA272E1F8D477300079D70 /* ImaggaRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47EA27651F8D56A600079D70 /* ImaggaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EA27641F8D56A600079D70 /* ImaggaRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		47EA272B1F8D477300079D70 /* ImaggaRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImaggaRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47EA272E1F8D477300079D70 /* ImaggaRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImaggaRouter.h; sourceTree = "<group>"; };
 		47EA272F1F8D477300079D70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47EA27641F8D56A600079D70 /* ImaggaRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImaggaRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				47EA272E1F8D477300079D70 /* ImaggaRouter.h */,
 				47EA272F1F8D477300079D70 /* Info.plist */,
+				47EA27641F8D56A600079D70 /* ImaggaRouter.swift */,
 			);
 			path = ImaggaRouter;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					47EA272A1F8D477300079D70 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47EA27651F8D56A600079D70 /* ImaggaRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +258,7 @@
 		47EA27341F8D477300079D70 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -266,6 +272,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.monscierge.ImaggaRouter;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -274,6 +281,7 @@
 		47EA27351F8D477300079D70 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
